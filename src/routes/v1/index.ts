@@ -4,7 +4,7 @@ const router = express.Router();
 
 const currentDate: Date = new Date();
 
-router.get('/ping', (req: Request, res: Response)=>{
+router.get('/ping', (_: Request, res: Response)=>{
   // const data = req.params;
   res.status(200).json({
     sucess: true,
